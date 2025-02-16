@@ -1,7 +1,7 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { lazy, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { submitMail } from "../provider/DataSlice";
+import { submitMail } from "../provider/dataSlice";
 const SuccessPop = lazy(() => import("./SuccessPop"));
 const GetInTouch = () => {
 	const dispatch = useDispatch();

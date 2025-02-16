@@ -1,6 +1,6 @@
 import { lazy, useState } from "react";
 import { useSelector } from "react-redux";
-import { SkillsData } from "../provider/DataSlice";
+import { SkillsData } from "../provider/dataSlice";
 const CertificatePop = lazy(() => import("./CertificatePop"));
 
 const SkillsSection = () => {
