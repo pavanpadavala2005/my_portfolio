@@ -26,7 +26,7 @@ const app = express();
 app.use(
 	cors({
 		origin: process.env.FRONTEND_URL,
-		methods: ["POST"],
+		methods: ["POST", "GET"],
 		credentials: true,
 	})
 );
@@ -42,7 +42,7 @@ const server = app.listen(PORT, (err) => {
 });
 
 app.get("/", (req, res) => {
-	res.send("Hello this is PAVAN KUMAR PADAVALA BACKEND");
+	res.send("Hello this is PAVAN KUMAR PADAVALA BACKEND",process.env.FRONTEND_URL);
 });
 
 app.use("/mail", mailRoutes);
