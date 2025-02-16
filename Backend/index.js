@@ -18,7 +18,7 @@ const app = express();
 // 				callback(new Error("Not allowed by CORS"));
 // 			}
 // 		},
-// 		methods: ["POST"],
+// 		methods: ["POST", "GET"],
 // 		credentials: true,
 // 	})
 // );
