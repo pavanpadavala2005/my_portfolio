@@ -40,8 +40,8 @@ const server = app.listen(PORT, (err) => {
 	connectDB();
 });
 
-app.get("/api/port", (req, res) => {
-	res.json({ port: server.address().port });
+app.get("/", (req, res) => {
+	res.send("Hello this is PAVAN KUMAR PADAVALA BACKEND");
 });
 
 app.use("/mail", mailRoutes);
