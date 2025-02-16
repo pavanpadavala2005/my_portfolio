@@ -30,6 +30,10 @@ app.use(
 		credentials: true,
 	})
 );
+
+console.log(process.env.FRONTEND_URL);
+
+
 app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
