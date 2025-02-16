@@ -42,7 +42,7 @@ const server = app.listen(PORT, (err) => {
 });
 
 app.get("/", (req, res) => {
-	res.send("Hello this is PAVAN KUMAR PADAVALA BACKEND",process.env.FRONTEND_URL);
+	res.send("Hello this is PAVAN KUMAR PADAVALA BACKEND");
 });
 
 app.use("/mail", mailRoutes);
