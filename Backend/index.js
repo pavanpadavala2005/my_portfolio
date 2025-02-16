@@ -31,9 +31,6 @@ app.use(
 	})
 );
 
-console.log(process.env.FRONTEND_URL);
-
-
 app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
@@ -45,7 +42,7 @@ const server = app.listen(PORT, (err) => {
 });
 
 app.get("/", (req, res) => {
-	res.send("Hello this is PAVAN KUMAR PADAVALA BACKEND");
+	res.send("Hello this is PAVAN KUMAR PADAVALA BACKEND",process.env.FRONTEND_URL);
 });
 
 app.use("/mail", mailRoutes);
