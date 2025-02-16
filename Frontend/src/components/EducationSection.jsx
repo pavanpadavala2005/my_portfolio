@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { EducationalData } from "../provider/DataSlice";
+import { EducationalData } from "../provider/dataSlice";
 const EducationSection = () => {
 	const educationData = useSelector(EducationalData);
 	return (
