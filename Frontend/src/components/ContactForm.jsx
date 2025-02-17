@@ -2,6 +2,8 @@ import { useState } from "react";
 import { submitMail } from "../provider/dataSlice";
 import { useDispatch } from "react-redux";
 
+const ACCESS_KEY = import.meta.env.VITE_RECEIVE_MAIL_FROM_FORM;
+
 const ContactForm = ({ setIsOpen, setMailerName }) => {
 	const dispatch = useDispatch();
 	const [formData, setFormData] = useState({
@@ -25,7 +27,7 @@ const ContactForm = ({ setIsOpen, setMailerName }) => {
 		}
 
 		const formDataObj = new FormData();
-		formDataObj.append("access_key", "5fe86d40-e9f2-4a47-ab95-8b90f0e1a20c");
+		formDataObj.append("access_key", ACCESS_KEY);
 		formDataObj.append("name", formData.name);
 		formDataObj.append("email", formData.email);
 		formDataObj.append("message", formData.message);
