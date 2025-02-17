@@ -6,8 +6,8 @@ const EducationSection = () => {
 		<section
 			id="Education"
 			className="w-full max-w-screen-2xl mx-auto bg-gradient-to-t from-indigo-100 via-white to-purple-100 overflow-hidden">
-			<div className="w-full max-w-screen-lg mx-auto py-5">
-				<h1 className="text-3xl md:text-4xl font-bold text-center mb-20 text-gray-800">
+			<div className="w-full max-w-screen-lg mx-auto">
+				<h1 className="text-4xl md:text-5xl font-bold text-center mb-16 md:mb-20 text-gray-800">
 					Education Details
 				</h1>
 
@@ -17,7 +17,7 @@ const EducationSection = () => {
 					<div className="md:hidden absolute left-6 h-full w-0.5 bg-gray-200"></div>
 
 					{/* Timeline items */}
-					<div className="space-y-6 md:space-y-3 px-4 md:px-6">
+					<div className="space-y-9 md:space-y-4 px-4 md:px-6">
 						{educationData.map((item, index) => (
 							<div
 								key={item.id}
@@ -74,7 +74,7 @@ const EducationSection = () => {
 								</div>
 
 								{/* Mobile layout */}
-								<div className="w-full md:hidden ml-14">
+								<div className="w-full md:hidden ml-12">
 									<div className=" px-4 py-2 bg-white rounded-lg shadow-lg">
 										<div className="text-xs flex gap-2 items-center font-semibold">
 											<p className="text-blue-600">{item.year}</p>

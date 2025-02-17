@@ -1,6 +1,5 @@
 import MailBox from "../models/receiveMail.model.js";
 
-// Create a new mail entry
 export const receiveMailFromClient = async (req, res) => {
 	if (!req.body || Object.keys(req.body).length === 0) {
 		return res.status(400).json({ message: "No data provided" });
@@ -17,7 +16,6 @@ export const receiveMailFromClient = async (req, res) => {
 	}
 };
 
-// Get all mails
 export const getAllMails = async (req, res) => {
 	try {
 		const mails = await MailBox.find();
@@ -27,11 +25,10 @@ export const getAllMails = async (req, res) => {
 	}
 };
 
-// Get a single mail by ID
 export const getSingleMail = async (req, res) => {
 	try {
-		const { id } = req.params; // Fix: Use 'id' instead of 'email'
-		const mail = await MailBox.findById(id); // Fix: Use 'MailBox' model
+		const { id } = req.params;
+		const mail = await MailBox.findById(id);
 
 		if (!mail) {
 			return res.status(404).json({ message: "Mail not found" });

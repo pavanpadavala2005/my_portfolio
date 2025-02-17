@@ -26,16 +26,16 @@ const ProjectsSection = () => {
 	return (
 		<section
 			id="Projects"
-			className="w-full py-1 md:py-5 max-w-screen-2xl mx-auto bg-gradient-to-t from-indigo-100 via-white to-purple-100">
+			className="w-full py-4 md:py-5 max-w-screen-2xl mx-auto bg-gradient-to-t from-indigo-100 via-white to-purple-100">
 			<div className="w-full max-w-screen-lg mx-auto px-8 md:px-4">
-				<h2 className="text-3xl md:text-4xl font-bold text-center mb-14 text-gray-900">
+				<h2 className="text-4xl md:text-5xl font-bold text-center mb-14 text-gray-900">
 					Projects
 				</h2>
 				<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 					{loadedProjects.map((project) => (
 						<div
 							key={project.id}
-							className="bg-white flex flex-col rounded-lg shadow-lg overflow-hidden">
+							className="bg-white flex flex-col rounded-lg shadow-lg overflow-hidden border-gray-50 border">
 							<img
 								src={project.image}
 								alt={project.title}

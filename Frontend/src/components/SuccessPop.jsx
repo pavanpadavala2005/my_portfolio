@@ -1,8 +1,9 @@
 import { useCallback, useEffect } from "react";
 
-const SuccessPop = ({ isOpen, setIsOpen, name }) => {
+const SuccessPop = ({ isOpen, setIsOpen, name, setMailerName }) => {
 	const handleClose = useCallback(() => {
 		setIsOpen(false);
+		setMailerName("");
 		document.body.style.overflow = "auto";
 	}, [setIsOpen]);
 
@@ -38,7 +39,7 @@ const SuccessPop = ({ isOpen, setIsOpen, name }) => {
 		<div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
 			<div className="relative w-full max-w-md bg-white rounded-xl shadow-2xl overflow-hidden p-6 text-center">
 				<h2 className="text-2xl font-semibold text-gray-800">
-					Thanks You <span className="font-bold text-black">{name}</span>
+					Thank You <span className="font-bold text-black">{name}</span>
 				</h2>
 				<p className="text-gray-600 font-semibold mt-2">
 					It means a lot to me, I once again Thanks a lot...

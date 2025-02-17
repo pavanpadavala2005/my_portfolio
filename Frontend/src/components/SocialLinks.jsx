@@ -26,7 +26,7 @@ const socialLinks = () => {
 	return (
 		<footer
 			id="Social_Links"
-			className="py-6 md:py-8 bg-gradient-to-br from-gray-600 via-gray-700 to-gray-500 text-white">
+			className="py-4 md:py-8 bg-gradient-to-br from-gray-600 via-gray-700 to-gray-500 text-white">
 			<div className="flex flex-col items-center justify-center gap-3 md:gap-4">
 				<p className="text-sm md:text-lg font-semibold tracking-wide">Social Links</p>
 

@@ -1,44 +1,17 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import { lazy, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { submitMail } from "../provider/dataSlice";
+const ContactForm = lazy(() => import("./ContactForm"));
 const SuccessPop = lazy(() => import("./SuccessPop"));
 const GetInTouch = () => {
-	const dispatch = useDispatch();
-	const { loading, success, error } = useSelector((state) => state.data);
 	const [isOpen, setIsOpen] = useState(false);
-	const [formData, setFormData] = useState({
-		name: "",
-		email: "",
-		message: "",
-	});
-
-	const handleChange = (e) => {
-		setFormData({ ...formData, [e.target.name]: e.target.value });
-	};
-
-	const handleReceiveMail = (e) => {
-		e.preventDefault();
-		if (formData.name === "" || formData.email === "" || formData.message === "") {
-			return;
-		}
-
-		dispatch(submitMail(formData));
-		setFormData({
-			name: "",
-			email: "",
-			message: "",
-		});
-		setIsOpen(true);
-	};
-
+	const [mailerName, setMailerName] = useState("");
 	return (
 		<section
 			id="Hire_Me"
-			className="w-full py-16 max-w-screen-2xl mx-auto bg-gradient-to-b from-indigo-100 via-white to-violet-100">
-			<div className="w-full max-w-screen-lg mx-auto px-6">
-				<h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
-					Hire Me
+			className="w-full py-20 max-w-screen-2xl mx-auto bg-gradient-to-b from-indigo-100 via-white to-violet-100">
+			<div className="w-full max-w-screen-lg mx-auto px-8">
+				<h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">
+					Mail Me
 				</h2>
 				<div className="grid md:grid-cols-9 gap-10">
 					<div className="col-span-4 space-y-3 md:space-y-8">
@@ -80,46 +53,18 @@ const GetInTouch = () => {
 					</div>
 
 					<div className="col-span-4 bg-white p-6 md:p-8 rounded-lg shadow-lg">
-						<form className="space-y-4">
-							{["Name", "Email"].map((field) => (
-								<div key={field}>
-									<label className="block text-xs md:text-sm font-medium text-gray-700 mb-2">
-										{field}
-									</label>
-									<input
-										type={field === "Email" ? "email" : "text"}
-										name={field.toLowerCase()}
-										value={formData[field.toLowerCase()]}
-										onChange={handleChange}
-										className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
-										placeholder={`Your ${field.toLowerCase()}`}
-										required
-									/>
-								</div>
-							))}
-							<div>
-								<label className="block text-xs md:text-sm font-medium text-gray-700 mb-2">
-									Message
-								</label>
-								<textarea
-									name="message"
-									value={formData.message}
-									onChange={handleChange}
-									className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-transparent h-28 md:h-32"
-									placeholder="Your message"
-									required></textarea>
-							</div>
-							<button
-								type="submit"
-								className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-indigo-500/25 whitespace-nowrap rounded-lg"
-								onClick={handleReceiveMail}>
-								{loading ? "Loading..." : "Mail to Me"}
-							</button>
-						</form>
+						<ContactForm setIsOpen={setIsOpen} setMailerName={setMailerName} />
 					</div>
 				</div>
 			</div>
-			{isOpen && <SuccessPop isOpen={isOpen} setIsOpen={setIsOpen} name={formData.name} />}
+			{isOpen && (
+				<SuccessPop
+					isOpen={isOpen}
+					setIsOpen={setIsOpen}
+					name={mailerName}
+					setMailerName={setMailerName}
+				/>
+			)}
 		</section>
 	);
 };

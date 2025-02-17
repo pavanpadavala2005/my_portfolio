@@ -19,12 +19,12 @@ const SkillsSection = () => {
 	return (
 		<section
 			id="Skills"
-			className="w-full max-w-screen-2xl mx-auto bg-gradient-to-b from-indigo-100 via-white to-purple-100 md:py-20">
+			className="w-full max-w-screen-2xl mx-auto bg-gradient-to-b from-indigo-100 via-indigo-50 to-purple-100 py-20">
 			<div className="w-full max-w-screen-lg mx-auto py-10 px-4">
-				<h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-900">
+				<h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">
 					Skills & Certificates
 				</h2>
-				<div className="flex justify-center mb-8 flex-wrap gap-5">
+				<div className="flex justify-center mb-12 flex-wrap gap-5">
 					{Object.keys(skills).map((tab) => (
 						<button
 							key={tab}
@@ -32,7 +32,7 @@ const SkillsSection = () => {
 							className={`px-4 md:px-6 py-2 md:py-2 text-sm md:text-base rounded-md ${
 								activeTab === tab
 									? "bg-gradient-to-r from-indigo-600 to-purple-700 text-white"
-									: "bg-gray-200 text-gray-900 font-semibold"
+									: "bg-white/90 text-gray-900 font-semibold hover:bg-gray-50"
 							}`}>
 							{tab.charAt(0).toUpperCase() + tab.slice(1)}
 						</button>
