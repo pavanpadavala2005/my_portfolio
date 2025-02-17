@@ -19,7 +19,7 @@ const HeroSection = () => {
 					<span className="block text-xl md:text-2xl bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text tracking-wider font-semibold text-transparent">
 						Recent Graduate
 					</span>
-					<p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-2 lg:mx-0">
+					<p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-2 lg:mx-0 md:px-0">
 						Passionate Computer Science Engineering student. Interested in MERN stack,
 						RESTful APIs, and scalable app development. Skilled in problem-solving,
 						performance optimization, and innovation-driven learning.
