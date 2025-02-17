@@ -18,18 +18,21 @@ const app = express();
 // 				callback(new Error("Not allowed by CORS"));
 // 			}
 // 		},
-// 		methods: ["POST"],
+// 		methods: ["POST", "GET"],
 // 		credentials: true,
 // 	})
 // );
 
-app.use(
-	cors({
-		origin: process.env.FRONTEND_URL,
-		methods: ["POST"],
-		credentials: true,
-	})
-);
+// app.use(
+// 	cors({
+// 		origin: process.env.FRONTEND_URL,
+// 		methods: ["POST", "GET"],
+// 		credentials: true,
+// 	})
+// );
+
+app.use(cors());
+
 app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
@@ -41,7 +44,7 @@ const server = app.listen(PORT, (err) => {
 });
 
 app.get("/", (req, res) => {
-	res.send("Hello this is PAVAN KUMAR PADAVALA BACKEND");
+	res.send("Hello this is PAVAN KUMAR PADAVALA BACKEND Hello";
 });
 
 app.use("/mail", mailRoutes);
