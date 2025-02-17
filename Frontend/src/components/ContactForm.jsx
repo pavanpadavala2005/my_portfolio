@@ -2,7 +2,7 @@ import { useState } from "react";
 import { submitMail } from "../provider/dataSlice";
 import { useDispatch } from "react-redux";
 
-const ACCESS_KEY = import.meta.env.VITE_RECEIVE_MAIL_FROM_FORM;
+const ACCESS_KEY = "5fe86d40-e9f2-4a47-ab95-8b90f0e1a20c";
 
 const ContactForm = ({ setIsOpen, setMailerName }) => {
 	const dispatch = useDispatch();
@@ -37,11 +37,10 @@ const ContactForm = ({ setIsOpen, setMailerName }) => {
 			body: formDataObj,
 		}).then((res) => res.json());
 
-		dispatch(submitMail(formData));
-
 		setLoading(false);
 
 		if (res.success) {
+			dispatch(submitMail(formData));
 			setMailerName(formData.name);
 			setIsOpen(true);
 			setFormData({ name: "", email: "", message: "" });
