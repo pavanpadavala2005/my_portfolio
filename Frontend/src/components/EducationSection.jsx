@@ -76,10 +76,14 @@ const EducationSection = () => {
 								{/* Mobile layout */}
 								<div className="w-full md:hidden ml-12">
 									<div className=" px-4 py-2 bg-white rounded-lg shadow-lg">
-										<div className="text-xs flex gap-2 items-center font-semibold">
-											<p className="text-blue-600">{item.year}</p>
+										<div className="text-xs flex gap-2 items-center">
+											<p className="text-blue-600 font-semibold">
+												{item.year}
+											</p>
 											<p> | </p>
-											<p className="tracking-wide">{item.percentage}</p>
+											<p className="tracking-wide font-bold">
+												{item.percentage}
+											</p>
 										</div>
 										<div className="text-base font-bold text-gray-700 mt-1">
 											{item.degree}

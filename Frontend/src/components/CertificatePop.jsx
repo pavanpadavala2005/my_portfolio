@@ -37,7 +37,7 @@ const CertificatePop = ({ isOpen, setIsOpen, imageUrl }) => {
 			<div className="relative w-full max-w-4xl bg-white rounded-xl shadow-2xl overflow-hidden mx-2 sm:mx-4">
 				<button
 					onClick={handleClose}
-					className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center bg-white bg-opacity-90 hover:bg-opacity-100 text-gray-800 rounded-full shadow-lg transition-all duration-300 z-10">
+					className="absolute top-1 right-1 w-6 h-6 flex items-center justify-center bg-white bg-opacity-90 hover:bg-opacity-100 text-gray-800 rounded-full shadow-lg transition-all duration-300 z-10">
 					<X className="w-6 h-6" />
 				</button>
 
@@ -47,6 +47,9 @@ const CertificatePop = ({ isOpen, setIsOpen, imageUrl }) => {
 						alt={imageUrl ? "Certificate Image" : "Image not available"}
 						className="w-full h-auto object-contain object-center max-h-[80vh] sm:max-h-[90vh]"
 						loading="eager"
+						onContextMenu={(e) => e.preventDefault()}
+						onDragStart={(e) => e.preventDefault()}
+						style={{ pointerEvents: "none" }}
 					/>
 				</div>
 			</div>

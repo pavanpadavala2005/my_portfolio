@@ -41,7 +41,7 @@ const SkillsSection = () => {
 				<div className="grid md:grid-cols-2 gap-8 px-4">
 					{skills[activeTab]?.map((item) => (
 						<div key={item.id} className="bg-white p-4 rounded-lg shadow-xl">
-							<div className="flex justify-between items-center text-xs md:text-lg font-semibold">
+							<div className="flex justify-between items-center text-sm md:text-lg font-semibold">
 								<h3>{item.name}</h3>
 								<h3>{item.percentage && `${item.percentage}%`}</h3>
 							</div>

@@ -23,7 +23,7 @@
 				"issuer": "Indian Servers Pvt. Ltd",
 				"year": "06/2023 to 07/2023",
 				"type": "Internship",
-				"imageLink": "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg"
+				"imageLink": "/PAVAN@INDIAN_SERVERS.jpg"
 			},
 			{
 				"id": 302,
@@ -31,30 +31,23 @@
 				"issuer": "Data Valley Pvt. Ltd",
 				"year": "05/2024 to 07/2024",
 				"type": "Internship",
-				"imageLink": "https://images.pexels.com/photos/1266820/pexels-photo-1266820.jpeg"
+				"imageLink": "/PAVAN@DATAVALLEY.jpg"
 			}
 		],
 		"Certification": [
-			{
-				"id": 401,
-				"name": "Advanced JavaScript",
-				"issuer": "Great Learning",
-				"type": "Certificate",
-				"imageLink": "https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg"
-			},
 			{
 				"id": 402,
 				"name": "Computing Using Python",
 				"issuer": "NPTEL, IIT Madras",
 				"type": "Certificate",
-				"imageLink": "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg"
+				"imageLink": "/PAVAN@NPTEL.jpg"
 			},
 			{
 				"id": 403,
 				"name": "Java Full Stack",
 				"issuer": "Wipro Talent Next",
 				"type": "Certificate",
-				"imageLink": "https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg"
+				"imageLink": "/PAVAN@WIPRO_TALENT_NEXT.jpg"
 			}
 		]
 	},
@@ -71,7 +64,7 @@
 			"title": "My Portfolio",
 			"image": "/Portfolio.png",
 			"tech": ["React.js", "TailwindCSS", "Redux Toolkit", "Express.js", "MongoDB"],
-			"link": "https://recipe-finder-app1.vercel.app/"
+			"link": "https://pavan-kumar-padavala.vercel.app/"
 		}
 	],
 	"Education": [

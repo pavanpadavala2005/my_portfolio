@@ -44,7 +44,7 @@ const ProjectsSection = () => {
 							/>
 
 							<div className="p-4 space-y-4">
-								<h3 className="text-base md:text-xl font-bold text-gray-900">
+								<h3 className="text-lg md:text-xl font-bold text-gray-900">
 									{project.title}
 								</h3>
 								<div className="flex flex-wrap gap-2">
@@ -60,7 +60,7 @@ const ProjectsSection = () => {
 									<a
 										href={project.link}
 										target="_blank"
-										className="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-2 md:px-4 py-1 md:py-1.5 text-sm md:text-base rounded-md hover:bg-blue-700 transition-colors whitespace-nowrap">
+										className="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-3 md:px-4 py-1.5 text-sm md:text-base rounded-md hover:bg-blue-800 transition-colors whitespace-nowrap">
 										View Project
 									</a>
 								</div>
