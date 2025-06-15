@@ -29,9 +29,9 @@ const EducationSection = () => {
 									}`}>
 									{index % 2 === 0 && (
 										<div className="p-6 bg-white rounded-lg shadow-lg">
-											<div className="text-sm text-blue-600 font-semibold">
+{/* 											{/*<div className="text-sm text-blue-600 font-semibold">
 												{item.year}
-											</div>
+											</div> */}
 											<div className="flex gap-2 mt-1 font-bold justify-end items-center">
 												<p className="text-lg">{item.degree}</p>
 												<p className="">|</p>
@@ -56,9 +56,9 @@ const EducationSection = () => {
 									}`}>
 									{index % 2 === 1 && (
 										<div className="p-6 bg-white rounded-lg shadow-lg">
-											<div className="text-sm text-blue-600 font-semibold">
+											{/*<div className="text-sm text-blue-600 font-semibold">
 												{item.year}
-											</div>
+											</div>*/}
 											<div className="flex gap-2 mt-1 font-bold items-center">
 												<p className="text-lg">{item.degree}</p>
 												<p className="">|</p>
@@ -77,9 +77,9 @@ const EducationSection = () => {
 								<div className="w-full md:hidden ml-12">
 									<div className=" px-4 py-2 bg-white rounded-lg shadow-lg">
 										<div className="text-xs flex gap-2 items-center">
-											<p className="text-blue-600 font-semibold">
+											{/*<p className="text-blue-600 font-semibold">
 												{item.year}
-											</p>
+											</p>*/}
 											<p> | </p>
 											<p className="tracking-wide font-bold">
 												{item.percentage}
