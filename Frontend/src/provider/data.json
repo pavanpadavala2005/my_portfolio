@@ -70,7 +70,7 @@
 	"Education": [
 		{
 			"id": 601,
-			"year": "2022 - 2025",
+			"year": "2019 - 2022",
 			"institution": "St. Ann's College of Engineering and Technology",
 			"degree": "CSE - AI & ML",
 			"percentage": "CGPA: 8.0",
@@ -78,7 +78,7 @@
 		},
 		{
 			"id": 602,
-			"year": "2019 - 2022",
+			"year": "2016 - 2019",
 			"institution": "Bapatla Polytechnic College, Bapatla",
 			"degree": "Diploma in Mechanical",
 			"percentage": "Percentage: 89.4",
@@ -86,7 +86,7 @@
 		},
 		{
 			"id": 603,
-			"year": "2018 - 2019",
+			"year": "2015 - 2016",
 			"institution": "Z.P.H Boys School, Epurupalem",
 			"degree": "10th Class (SSC)",
 			"percentage": "CGPA: 9.3",
