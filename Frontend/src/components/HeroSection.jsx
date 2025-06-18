@@ -3,7 +3,7 @@
 
 const HeroSection = () => {
 	const openResume = () => {
-		const pdfUrl = "/PAVAN_KUMAR_RESUME.pdf";
+		const pdfUrl = "/PAVAN_KUMAR.pdf";
 		window.open(pdfUrl, "_blank", "noopener,noreferrer");
 	};
 
