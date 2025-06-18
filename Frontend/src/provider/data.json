@@ -22,14 +22,14 @@
 				"name": "Machine Learning Intern",
 				"issuer": "Indian Servers Pvt. Ltd",
 				"type": "Internship",
-				"imageLink": "/PAVAN@INDIAN_SERVERS.jpg"
+
 			},
 			{
 				"id": 302,
 				"name": "Full Stack Development Intern",
 				"issuer": "Data Valley Pvt. Ltd",
 				"type": "Internship",
-				"imageLink": "/PAVAN@DATAVALLEY.jpg"
+
 			}
 		],
 		"Certification": [
@@ -38,14 +38,14 @@
 				"name": "Computing Using Python",
 				"issuer": "NPTEL, IIT Madras",
 				"type": "Certificate",
-				"imageLink": "/PAVAN@NPTEL.jpg"
+				
 			},
 			{
 				"id": 403,
 				"name": "Java Full Stack",
 				"issuer": "Wipro Talent Next",
 				"type": "Certificate",
-				"imageLink": "/PAVAN@WIPRO_TALENT_NEXT.jpg"
+	
 			}
 		]
 	},
