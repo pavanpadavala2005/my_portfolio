@@ -25,11 +25,11 @@ const HeroSection = () => {
 						performance optimization, and innovation-driven learning.
 					</p>
 					<div className="py-4">
-						<button
+					{/*	<button
 							className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-7 md:px-5 py-3 md:py-2 text-lg tracking-wider md:text-base hover:from-indigo-700 hover:to-purple-700 rounded-lg transition-all duration-300 shadow-lg"
 							onClick={openResume}>
 							Resume
-						</button>
+						</button>*/}
 					</div>
 				</div>
 				<div className="w-64 md:w-4/12 flex justify-center md:p-4">
